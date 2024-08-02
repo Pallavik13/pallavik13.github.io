@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Android projects</title>
+    <link rel="stylesheet" href="./separateStyles.css" />
+    <style>
+      .project-images-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 10px 0;
+      }
+      .project-images-container img {
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainHeader">
+      <header class="header">
+        <a href="./index.html" class="logo">Pallavi Karmanchi</a>
+        <nav class="navbar">
+          <a href="./index.html">HOME</a>
+          <a href="./index.html">ABOUT</a>
+          <a href="./index.html">PROJECTS</a>
+          <a href="./index.html">CONTACT</a>
+        </nav>
+      </header>
+    </div>
+    <div class="appContent">
+      <div class="appContainer">
+        <div class="project">
+          <img src="./studentExam.jpg" alt="" />
+          <div class="project-layer">
+            <h4>Student database management</h4>
+            <p>
+              Android application designed using Android with user friendly
+              interactions
+            </p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./examHall.jpg" alt="" />
+          <div class="project-layer">
+            <h4>Examination seat allotment</h4>
+            <p>Android application designed to assign the halls during exams</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="project-details">
+      <div class="project-image"></div>
+      <div class="project-info-container">
+        <div class="project-info">
+          <h2></h2>
+          <p></p>
+          <div class="project-images-container"></div>
+          <button class="close-btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./androidApp.js"></script>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+:root {
+  --bg-color: #1f242e;
+  --text-color: #fff;
+  --main-color: #0ef;
+  --second-bg-color: #323946;
+}
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Anta", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+.navbar a {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+.appContent {
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  transition: transform 0.5s ease-in-out;
+}
+.appContent.shifted {
+  transform: translateX(-35%);
+}
+.appContainer {
+  gap: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.project {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.appContainer img {
+  width: 300px;
+  transition: all 0.5s;
+  height: 180px;
+  border-radius: 20px;
+}
+.project {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1 var(--bg-color);
+  overflow: hidden;
+  display: flex;
+}
+.project:hover img {
+  transform: scale(1.1);
+}
+.project .project-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 180px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 4rem;
+  text-align: center;
+  transform: translateY(100%);
+  transition: all 0.5s ease-in-out;
+}
+.project:hover .project-layer {
+  transform: translateY(0);
+  cursor: pointer;
+}
+.project-layer h4 {
+  font-size: 3rem;
+}
+.project-layer p {
+  font-size: 1.3rem;
+  margin: 10px 0 1rem;
+}
+.project-details {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  transition: right 0.5s ease-in-out;
+}
+
+.project-details.active {
+  right: 0;
+}
+
+.project-image {
+  width: 30%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-info-container {
+  width: 70%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-info h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 50px;
+}
+
+.project-info p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.close-btn {
+  margin-top: auto; /* Push the button to the bottom */
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+  background-color: #00c2c2;
+}

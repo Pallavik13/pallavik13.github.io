@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data analytics projects</title>
+    <link rel="stylesheet" href="./separateStyles.css" />
+    <style>
+      .project-images-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+      }
+
+      .project-images-container img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainHeader">
+      <header class="header">
+        <a href="./index.html" class="logo">Pallavi Karmanchi</a>
+        <nav class="navbar">
+          <a href="./index.html">HOME</a>
+          <a href="./index.html">ABOUT</a>
+          <a href="./index.html">PROJECTS</a>
+          <a href="./index.html">CONTACT</a>
+        </nav>
+      </header>
+    </div>
+    <div class="appContent">
+      <div class="appContainer">
+        <div class="project">
+          <img src="./ev.jpg" alt="" />
+          <div class="project-layer">
+            <h4>Electric Vehicle usage analysis</h4>
+            <p>
+              The usage of electric vehicles on the model, make and type of EV
+            </p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="creditCard.jpg" alt="" />
+          <div class="project-layer">
+            <h4>Credit card analysis</h4>
+            <p>
+              Analysed how many people accepted the credit cards and what are
+              their income levels
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="project-details">
+      <div class="project-image"></div>
+      <div class="project-info-container">
+        <div class="project-info">
+          <h2></h2>
+          <p></p>
+          <div class="project-images-container"></div>
+          <button class="close-btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./dataAnalytics.js"></script>
+  </body>
+</html>
